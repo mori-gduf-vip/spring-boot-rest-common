@@ -1,5 +1,6 @@
 package com.mori.api;
 
+import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import com.alibaba.fastjson.JSON;
 import com.mori.api.core.listener.ApplicationEnvironmentPreparedEventListener;
 import lombok.extern.slf4j.Slf4j;
@@ -9,6 +10,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @Slf4j
+@EnableDubboConfiguration
 @SpringBootApplication
 public class CommonRestApplication extends SpringBootServletInitializer {
     @Override
